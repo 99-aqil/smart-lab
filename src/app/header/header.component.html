@@ -1,0 +1,129 @@
+<!--HEADER STARTS HERE-->
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="logo-img">
+            <a routerLink="/home">
+              <img src="../assets/Images/Smart lab logo (1) (1).png">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="language">
+            <ul>
+              <li>
+                <a routerLink="/about-us" routerLinkActive="active">
+                  About Us
+                </a>
+              </li>
+              <li (click)="drop('service')">Our Services <i class="fa fa-caret-down"></i>
+                <div class="dropdown" *ngIf="id === 'service'">
+                  <ul>
+                    <li>
+                      <a routerLink="/bulk-sms" routerLinkActive="active">Bulk SMS</a>
+                    </li>
+                    <li>
+                      <a routerLink="/document-management-digital-library" routerLinkActive="active">Document Management & Digital Library</a>
+                    </li>
+                    <li>
+                      <a routerLink="/software-development" routerLinkActive="active">Software Development</a>
+                    </li>
+                    <li>
+                      <a routerLink="/data-management" routerLinkActive="active">Data Management</a>
+                    </li>
+                    <li>
+                      <a routerLink="/system-integration" routerLinkActive="active">System Integration</a>
+                    </li>
+                    <li>
+                        <a routerLink="/managed-services" routerLinkActive="active">Managed Services</a>
+                    </li>
+                    <li>
+                        <a routerLink="/it-consulting" routerLinkActive="active">IT Consulting</a>
+                    </li>
+                    <li>
+                        <a routerLink="/it-training-certification" routerLinkActive="active">IT Training & Certification</a>
+                    </li>
+                    <li>
+                        <a routerLink="/analytics" routerLinkActive="active">Analytics</a>
+                    </li>
+                    <li>
+                        <a href="https://smart-voice.biz/digital-engagements/" routerLinkActive="active">Digital Engagements</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li (click)="drop('solution')">Our Solutions <i class="fa fa-caret-down"></i>
+                <div class="dropdown" *ngIf="id === 'solution'">
+                  <ul>
+                    <li>
+                      <a routerLink="/cyber-security" routerLinkActive="active">Cyber Security</a>
+                    </li>
+                    <li>
+                      <a routerLink="/forensic" routerLinkActive="active">Forensic</a>
+                    </li>
+                    <li>
+                      <a href="/vapt">VAPT</a>
+                    </li>
+                    <li>
+                      <a routerLink="/data-center-design-implementation" routerLinkActive="active">Data Center design and Implementation</a>
+                    </li>
+                    <li>
+                      <a routerLink="/structured-cabling" routerLinkActive="active">Structured Cabling</a>
+                    </li>
+                    <li>
+                      <a routerLink="/cctv-surveillance" routerLinkActive="active">CCTV Surveillance</a>
+                    </li>
+                    <li>
+                      <a routerLink="/video-conferencing" routerLinkActive="active">Video Conferencing</a>
+                    </li>
+                    <li>
+                        <a routerLink="/wireless-networking" routerLinkActive="active">Wireless Networking</a>
+                    </li>
+                    <li>
+                        <a routerLink="/building-automation" routerLinkActive="active">Building Automation</a>
+                    </li>
+                    <li>
+                        <a routerLink="/identify-access-management" routerLinkActive="active">Identify and Access Management</a>
+                    </li>
+                    <li>
+                        <a routerLink="/iot" routerLinkActive="active">IOT</a>
+                    </li>
+                    <li>
+                        <a routerLink="/erp-customize-software" routerLinkActive="active">ERP & Customize Software</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a routerLink="/our-clients" routerLinkActive="active">
+                  Our Clients
+                </a>
+              </li>
+              <li>
+                <a routerLink="/our-partners" routerLinkActive="active">
+                  Our Partners
+                </a>
+              </li>
+              <li>
+                <a routerLink="/contact" routerLinkActive="active">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/SmartLab.biz">
+                    <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/smart-lab-biz/?originalSubdomain=bd">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+<!--HEADER ENDS HERE-->

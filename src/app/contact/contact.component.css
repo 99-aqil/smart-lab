@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.containers {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 10px;
+    padding-bottom: 35px;
+    padding-top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background: #111;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title::after {
+    content: '\f00d';
+    font-family: FontAwesome;
+    color: #ff4000da;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.title h2 {
+    font-size: 30px;
+    color: #ff4000da;
+    font-weight: 100px;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: -10px;
+}
+.footer-top{
+    padding: 30px;
+    background: #fff;
+}
+
+.footer-all-menu{
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-width: thin;
+    border-radius: 15px; 
+    margin: 150px 0px 0px 0px;
+}
+
+.footer-all-menu h2{
+    color: #111;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.footer-all-menu ul{
+    padding: 0;
+    margin: 50px;
+}
+
+.footer-all-menu ul li{
+    list-style-type: none;
+    margin-top: 8px;
+    font-size: 14px
+}
+
+.footer-all-menu ul li i{
+    margin-right: 10px;
+    font-size: 17px;
+    color: #ff4000da;
+}
+
+.footer-all-menu ul li .heading{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-all-menu ul li .address{
+    color: #111;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.footer-all-menu ul li .email a{
+    padding-left: 10px;
+    color: #111;
+    text-decoration: underline;
+    transition: .3 all ease;
+    font-size: 15px;
+}
+
+.footer-all-menu ul li .email a:hover{
+    color:  #ff4000da;
+}
+
+.footer-all-menu ul li .number a{
+    color: #111;
+    font-size: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.footer-all-menu ul li .number a:hover{
+    color:  #ff4000da;
+}
+
+.center{
+    width: 400px;
+    margin: 50px 0px 0px 150px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-width: thin;
+    border-radius: 15px;
+
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    color: #ff4000da;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #abababda;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #ff4000da;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #ff4000da;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #ff4000da;
+    transition: all .5s ease;
+}
+
+/*FOOTER ENDS HERE*/
+
+@media(max-width:991px){
+    .footer-all-menu{
+        margin-top: 10px;
+    }
+    .center{
+        margin: 50px auto;
+    }
+}
